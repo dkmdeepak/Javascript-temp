@@ -1,17 +1,24 @@
-const input = document.querySelector('input');
-const login=document.querySelector('.login');
-const logout=document.querySelector('.logout');
-const h1=document.querySelector('h1');
+const hello=document.querySelector('.hello2')
+const input=document.querySelector('input')
+const loginBtn=document.querySelector('button')
+const logoutBtn=document.querySelector('.logout')
 
-login.onclick=()=>{
-    if(input.value){
-        localStorage.setItem("token",input.value)
-        h1.innerText="Welcom to Project"
-        console.log(JSON.stringify(localStorage.getItem('token')));
-        
+document.addEventListener('DOMContentLoaded', () => {
+    const token = localStorage.getItem('token');
+    if (token) {
+        hello.textContent = token;
     }
-}
-logout.onclick=()=>{
-    localStorage.clear();
-    location.reload();
-}
+    input.value = ''; // Clear the input field on page load
+});
+
+loginBtn.onclick = () => {
+    if (input.value) {
+        localStorage.setItem('token', input.value); //Sorage
+        hello.textContent = input.value;
+    }
+};
+
+logoutBtn.onclick = () => {
+    localStorage.clear(); //Clear the storage 
+    location.reload(); // Refresh the page
+};
