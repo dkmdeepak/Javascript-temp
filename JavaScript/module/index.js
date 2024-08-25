@@ -2,7 +2,6 @@
 // function myFunc=()=>{
 //     return "Heading";
 // }
-
 // export{myString,myFunc}
 
 //  function handlechange(){
