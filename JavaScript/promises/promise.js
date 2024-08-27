@@ -51,3 +51,38 @@
 // }).then((resolve)=>{
 //     console.log(resolve);
 // })
+
+
+//Next
+//--------------
+// --function getData(){
+//   --  new Promise((resolve,reject)=>{
+//    --     return resolve(['Javascript','Java'])
+// --    })
+// --}
+
+// --function getData1(){
+//   --  return new Promise((resolve,reject)=>{
+//     --    resolve(['React','Angular'])
+// --    })
+// --}
+
+const getData=new Promise((res,rej)=>{
+    res(['Javascript','Java'])
+})
+const getData1=new Promise((res,rej)=>{
+    res(['React','Angular'])
+})
+// const getData1=new Promise((res,rej)=>{
+//     rej('##---not found!!!!---##')
+// })
+
+
+const allPromises=Promise.all([getData,getData1])
+
+allPromises.then((response)=>{
+    console.log(response.flat(Infinity));
+}).catch((err)=>{
+    console.log(err);
+    
+})
