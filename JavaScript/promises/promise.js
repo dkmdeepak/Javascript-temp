@@ -67,22 +67,22 @@
 // --    })
 // --}
 
-const getData=new Promise((res,rej)=>{
-    res(['Javascript','Java'])
-})
-const getData1=new Promise((res,rej)=>{
-    res(['React','Angular'])
-})
+// const getData=new Promise((res,rej)=>{
+//     res(['Javascript','Java'])
+// })
+// const getData1=new Promise((res,rej)=>{
+//     res(['React','Angular'])
+// })
 // const getData1=new Promise((res,rej)=>{
 //     rej('##---not found!!!!---##')
 // })
 
 
-const allPromises=Promise.all([getData,getData1])
+// const allPromises=Promise.all([getData,getData1])
 
-allPromises.then((response)=>{
-    console.log(response.flat(Infinity));
-}).catch((err)=>{
-    console.log(err);
+// allPromises.then((response)=>{
+//     console.log(response.flat(Infinity));
+// }).catch((err)=>{
+//     console.log(err);
     
-})
+// })
