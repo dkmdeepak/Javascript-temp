@@ -1,4 +1,5 @@
 import './App.css';
+import Employee from './Employee' 
 
 function App() {
   const name='Peter'
@@ -9,6 +10,9 @@ function App() {
     <>
     <div className="App">
       <h1 style={{backgroundColor:'green',color:'white'}}>dash</h1>
+    </div>
+    <div>
+      <Employee/>
     </div>
     <div style={{color:'black'}}>
       <h1 style={{color:'blueviolet'}}>Hello-{name}</h1>
