@@ -1,6 +1,7 @@
 import './App.css';
 import Employee from './Employee' 
 import Input from './Input';
+import Manage from './Manage';
 
 function App() {
   const name='Peter'
@@ -21,8 +22,9 @@ function App() {
         <input placeholder={placeholder} className='main' type='text' />
       </label>
       <h3>{valid?'True':'False'}</h3>
-      <h3>{valids?'True':'False'}</h3>
       <Input/>
+      <h3>{valids?'True':'False'}</h3>
+      <Manage/>
     </div>
   </>
   );

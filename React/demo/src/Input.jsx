@@ -7,9 +7,10 @@ function Input(){
 
     const change=()=>{
         console.log(insert);
-        // alert(insert)
+        // alert(eval(insert))
+        
         try{
-            alert(eval(insert))
+        alert(insert)
         }
         catch{
             alert('Invalid Expression')
