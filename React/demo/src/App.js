@@ -1,5 +1,6 @@
 import './App.css';
 import Employee from './Employee' 
+import Input from './Input';
 
 function App() {
   const name='Peter'
@@ -21,6 +22,7 @@ function App() {
       </label>
       <h3>{valid?'True':'False'}</h3>
       <h3>{valids?'True':'False'}</h3>
+      <Input/>
     </div>
   </>
   );
