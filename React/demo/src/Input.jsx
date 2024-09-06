@@ -1,4 +1,5 @@
 import Use from "./Use";
+import './index.css'
 
 function Input(){ 
     let insert=''
@@ -30,7 +31,7 @@ function Input(){
         <button onClick={change}>Click Me</button>
 
             <div>
-                <table>
+                <table className="table table-border" style={{color:'blue'}}>
                     <tr>
                         <th>Id</th>
                         <th>Name</th>
