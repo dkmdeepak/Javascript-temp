@@ -12,6 +12,7 @@ function Manage() {
     }
   return (
     <>
+    <input type='text'/>
     <div>
       <table>
         <thead>
