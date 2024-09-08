@@ -1,5 +1,7 @@
 import Use from "./Use";
 import './index.css'
+import User from './User'
+
 
 function Input(){ 
     let insert=''
@@ -24,6 +26,7 @@ function Input(){
     
     return(
         <>
+        <User />
         <input type="text" onChange={(e)=>{
             handle(e.target.value)
         }} /><br />

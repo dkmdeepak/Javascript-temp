@@ -9,7 +9,8 @@ function Use(url) {
     })
   },[url])
   
-  return state;
+  return state
+  
 }
 
 export default Use
