@@ -15,5 +15,6 @@ To get started with any of the projects in this repository:
 <h2>🛠️ Technologies Used</h2>
   <li>React</li>
   <li>Javascript</li>
+  <li>JSON</li>
   <li>CSS</li>
   <li>HTML</li>
