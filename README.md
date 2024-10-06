@@ -1,4 +1,4 @@
-<h1>Practice Repository</h1>
+ <h1>Practice Repository</h1>
 
 <p>Welcome to my Practice Repository! This repository is dedicated to practicing my skills-Javascript, React. Here, you'll find a collection of  exercises.</p>
 <h2>🚀 Getting Started</h2>
